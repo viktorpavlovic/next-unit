@@ -2,7 +2,7 @@ import useMediaQuery from "@/hooks/useMediaQueries";
 import { SelectedPage } from "@/shared/types";
 import ActionButton from "@/shared/ActionButton";
 import HomePageText from "@/assets/HomePageText.png";
-import HomePageGraphic from "@/assets/HomePageGraphic.png";
+import HomePageGraphic from "@/assets/HomeImage.jpg";
 import SponsorRedBll from "@/assets/SponsorRedBull.png";
 import SponsorForbes from "@/assets/SponsorForbes.png";
 import SponsorFortune from "@/assets/SponsorFortune.png";
@@ -14,7 +14,7 @@ type Props = {
 };
 
 const Home = ({ setSelectedPage }: Props) => {
-  const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
+  // const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
 
   return (
     <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
@@ -38,14 +38,20 @@ const Home = ({ setSelectedPage }: Props) => {
             }}
           >
             <div className="relative">
-              <div className="before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-evolvetext">
-                <img src={HomePageText} alt="home-page-text" />
-              </div>
+              {/* <div className="before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-evolvetext"> */}
+              {/* <img src={HomePageText} alt="home-page-text" /> */}
+              {/* </div> */}
             </div>
             <p className="mt-8 text-sm">
-              Unrivaled Gym. Unparalleled Training Fitness Classes. World Class
-              Studios to get the Body Shapes That you Dream of.. Get Your Dream
-              Body Now.
+              NextUnit IT consulting company is advisory services company that
+              helps clients assess different technology strategies and, in doing
+              so, align their technology strategies with their business or
+              process strategies. NextUnit supports customer IT initiatives by
+              providing strategic, architectural, operational, and
+              implementation planning. Additionally, we offer comprehensive IT
+              services support for small businesses that may not have an
+              in-house IT department, ensuring their technology runs smoothly
+              and efficiently.
             </p>
           </motion.div>
           {/* ACTIONS */}
@@ -63,22 +69,22 @@ const Home = ({ setSelectedPage }: Props) => {
             <ActionButton setSelectedPage={setSelectedPage}>
               Join now
             </ActionButton>
-            <AnchorLink
+            {/* <AnchorLink
               className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
               onClick={() => setSelectedPage(SelectedPage.ContactUs)}
               href={`#${SelectedPage.ContactUs}`}
             >
               <p>Learn More</p>
-            </AnchorLink>
+            </AnchorLink> */}
           </motion.div>
         </div>
         {/* IMAGE */}
-        <div className="flex bassis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-items-end">
+        <div className="flex bassis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-items-end pt-3">
           <img src={HomePageGraphic} alt="home-page-graphic" />
         </div>
       </motion.div>
       {/* SPONSORS */}
-      {isAboveMediumScreens && (
+      {/* {isAboveMediumScreens && (
         <div className="h-[150px] w-full bg-primary-100 py-10">
           <div className="mx-auto w-5/6">
             <div className="flex w-3/5 items-center justify-between gap-8">
@@ -88,7 +94,7 @@ const Home = ({ setSelectedPage }: Props) => {
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </section>
   );
 };

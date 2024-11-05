@@ -1,33 +1,47 @@
 import HText from "@/shared/HText";
-import { BenefitType, SelectedPage } from "@/shared/types";
+import { ProductType, SelectedPage } from "@/shared/types";
 import BenefitPageGraphic from "@/assets/BenefitsPageGraphic.png";
-import Benefit from "./Benefit";
+import Product from "./Product";
 import {
-  HomeModernIcon,
-  UserGroupIcon,
-  AcademicCapIcon,
+  LightBulbIcon,
+  PuzzlePieceIcon,
+  ChartBarIcon,
+  ClipboardIcon,
+  LifebuoyIcon,
 } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 import ActionButton from "@/shared/ActionButton";
 
-const benefits: Array<BenefitType> = [
+const ourProducts: Array<ProductType> = [
   {
-    icon: <HomeModernIcon className="h-6 w-6" />,
-    title: "State of the Art Facilities",
+    icon: <LightBulbIcon className="h-6 w-6" />,
+    title: "Strategic Planning",
     description:
-      "Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a in lectus pellentesque. Ullamcorper et.",
+      "We offer advisory services to help clients assess their IT needs and formulate effective system implementation plans.",
   },
   {
-    icon: <UserGroupIcon className="h-6 w-6" />,
-    title: "100's of Diverse Classes",
+    icon: <PuzzlePieceIcon className="h-6 w-6" />,
+    title: "Architecture Planning",
     description:
-      "Eu ipsum id egestas risus tempus enim semper felis quis. Nec consectetur ac venenatis facilisi est. Eget ac turpis id.",
+      " Our services combine strategic plans with knowledge of emerging technologies to create logical system designs and the supporting infrastructure needed to meet customer requirements.",
   },
   {
-    icon: <AcademicCapIcon className="h-6 w-6" />,
-    title: "Expert and Pro Trainers",
+    icon: <ChartBarIcon className="h-6 w-6" />,
+    title: "Operational Assessment/Benchmarking",
     description:
-      "Fusce vestibulum aliquam ut cras. Nisl lectus egestas sapien nisl. Lacus at mi sit pellentesque. Congue parturient.",
+      "We evaluate the operating efficiency and capacity of a client’s IT environment to identify opportunities for improvement.",
+  },
+  {
+    icon: <ClipboardIcon className="h-6 w-6" />,
+    title: "Implementation Planning",
+    description:
+      "We advise on the rollout and testing of new solutions to ensure seamless and efficient deployments.",
+  },
+  {
+    icon: <LifebuoyIcon className="h-6 w-6" />,
+    title: "IT Support Services",
+    description:
+      "Our team provides ongoing support and maintenance to small businesses, ensuring they have reliable and responsive technical assistance without the need for an internal IT department.",
   },
 ];
 
@@ -42,11 +56,11 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
-const Benefits = ({ setSelectedPage }: Props) => {
+const OurProducts = ({ setSelectedPage }: Props) => {
   return (
-    <section id="benefits" className="mx-auto min-h-full w-5/6 py-20">
+    <section id="ourproducts" className="mx-auto  w-5/6 py-20">
       <motion.div
-        onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
+        onViewportEnter={() => setSelectedPage(SelectedPage.OurProducts)}
       >
         {/* HEADER */}
         <motion.div
@@ -60,12 +74,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
           }}
           className="md:my-5 md:w-3/5"
         >
-          <HText>MORE THAN JUST GYM.</HText>
-          <p className="my-5 text-sm">
-            We provide world class fitness equipment, trainers and classes to
-            get you to your ultimate fitness goals with ease. We provide true
-            care into each and every member.
-          </p>
+          <HText>OUR PRODUCTS</HText>
         </motion.div>
 
         {/* BENEFITS */}
@@ -76,29 +85,29 @@ const Benefits = ({ setSelectedPage }: Props) => {
           viewport={{ once: true, amount: 0.5 }}
           variants={container}
         >
-          {benefits.map((benefit: BenefitType) => (
-            <Benefit
-              key={benefit.title}
-              icon={benefit.icon}
-              title={benefit.title}
-              description={benefit.description}
+          {ourProducts.map((product: ProductType) => (
+            <Product
+              key={product.title}
+              icon={product.icon}
+              title={product.title}
+              description={product.description}
               setSelectedPage={setSelectedPage}
             />
           ))}
         </motion.div>
 
         {/* GRAPHICS AND DESCRIPTION */}
-        <div className="mt-16 items-center justify-between gap-20 md:mt-28 md:flex ">
-          {/* GRAPHIC */}
-          <img
+        {/* <div className="mt-16 items-center justify-between gap-20 md:mt-28 md:flex "> */}
+        {/* GRAPHIC */}
+        {/* <img
             className="mx-auto"
             src={BenefitPageGraphic}
             alt="benefits-page-graphic"
-          />
-          {/* DESCRIPTION */}
-          <div>
-            {/* TITLE */}
-            <div className="relative">
+          /> */}
+        {/* DESCRIPTION */}
+        {/* <div> */}
+        {/* TITLE */}
+        {/* <div className="relative">
               <div className="before:absolute before:-top-20 before:-left-20 before:z-[1] before:content-abstractwaves">
                 <motion.div
                   initial="hidden"
@@ -116,10 +125,10 @@ const Benefits = ({ setSelectedPage }: Props) => {
                   </HText>
                 </motion.div>
               </div>
-            </div>
+            </div> */}
 
-            {/* DESCRIPT */}
-            <motion.div
+        {/* DESCRIPT */}
+        {/* <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -143,10 +152,10 @@ const Benefits = ({ setSelectedPage }: Props) => {
                 facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
                 enim mattis odio in risus nunc.
               </p>
-            </motion.div>
+            </motion.div> */}
 
-            {/* BUTTON  */}
-            <div className="relative mt-16">
+        {/* BUTTON  */}
+        {/* <div className="relative mt-16">
               <div className="before:absolute before:-bottom-20 before:right-40 before:z=[-1] before:content-sparkles">
                 <ActionButton setSelectedPage={setSelectedPage}>
                   Join Now
@@ -154,10 +163,10 @@ const Benefits = ({ setSelectedPage }: Props) => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </motion.div>
     </section>
   );
 };
 
-export default Benefits;
+export default OurProducts;

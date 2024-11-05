@@ -1,17 +1,21 @@
-import Logo from "@/assets/Logo.png";
+import Logo from "@/assets/Logo.webp";
 
 const Footer = () => {
   return (
     <footer className="bg-primary-100 py-16">
       <div className="justify-content mx-auto w-5/6 gap-16 md:flex">
         <div className="mt-16 basis-1/2 md:mt-0">
-          <img src={Logo} alt="logo" />
+          <img
+            src={Logo}
+            alt="logo"
+            className="h-16 w-auto object-contain rounded-lg p-2 hover:opacity-90 transition-opacity duration-300"
+          />
           <p className="my-5">
             Lorem vitae ut augue auctor faucibus eget eget ut libero. Elementum
             purus et arcu massa dictum condimentum. Augue scelerisque iaculis
             orci ut habitant laoreet. Iaculis tristique.
           </p>
-          <p>© Evogym All Rights Reserved.</p>
+          <p>© Next Unit All Rights Reserved.</p>
         </div>
         <div className="mt-16 basis-1/4 md:mt-0">
           <h4 className="font-bold">Links</h4>
