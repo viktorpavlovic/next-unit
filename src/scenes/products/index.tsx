@@ -58,31 +58,29 @@ type Props = {
 
 const OurProducts = ({ setSelectedPage }: Props) => {
   return (
-    <section id="ourproducts" className="mx-auto  w-5/6 py-20">
+    <section id="ourproducts" className="mx-auto w-5/6 py-20">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.OurProducts)}
       >
         {/* HEADER */}
         <motion.div
           initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.5 }}
+          animate="visible"
           variants={{
             hidden: { opacity: 0, x: -50 },
             visible: { opacity: 1, x: 0 },
           }}
+          transition={{ duration: 0.5 }}
           className="md:my-5 md:w-3/5"
         >
           <HText>OUR PRODUCTS</HText>
         </motion.div>
 
-        {/* BENEFITS */}
+        {/* PRODUCTS */}
         <motion.div
-          className="md:flex items-center justify-between gap-8 mt-5"
+          className="flex flex-col md:flex-row items-center justify-between gap-8 mt-5"
           initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
+          animate="visible"
           variants={container}
         >
           {ourProducts.map((product: ProductType) => (
