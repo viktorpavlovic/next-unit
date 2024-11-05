@@ -1,6 +1,6 @@
 import HText from "@/shared/HText";
 import { ProductType, SelectedPage } from "@/shared/types";
-import BenefitPageGraphic from "@/assets/BenefitsPageGraphic.png";
+// import BenefitPageGraphic from "@/assets/BenefitsPageGraphic.png";
 import Product from "./Product";
 import {
   LightBulbIcon,
@@ -10,7 +10,7 @@ import {
   LifebuoyIcon,
 } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
-import ActionButton from "@/shared/ActionButton";
+// import ActionButton from "@/shared/ActionButton";
 
 const ourProducts: Array<ProductType> = [
   {

@@ -1,12 +1,12 @@
-import useMediaQuery from "@/hooks/useMediaQueries";
+// import useMediaQuery from "@/hooks/useMediaQueries";
 import { SelectedPage } from "@/shared/types";
 import ActionButton from "@/shared/ActionButton";
-import HomePageText from "@/assets/HomePageText.png";
+// import HomePageText from "@/assets/HomePageText.png";
 import HomePageGraphic from "@/assets/HomeImage.jpg";
-import SponsorRedBll from "@/assets/SponsorRedBull.png";
-import SponsorForbes from "@/assets/SponsorForbes.png";
-import SponsorFortune from "@/assets/SponsorFortune.png";
-import AnchorLink from "react-anchor-link-smooth-scroll";
+// import SponsorRedBll from "@/assets/SponsorRedBull.png";
+// import SponsorForbes from "@/assets/SponsorForbes.png";
+// import SponsorFortune from "@/assets/SponsorFortune.png";
+// import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "framer-motion";
 
 type Props = {
