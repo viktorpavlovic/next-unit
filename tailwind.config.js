@@ -4,15 +4,16 @@ export const content = ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"];
 export const theme = {
   extend: {
     colors: {
-      "gray-20": "#F8F4EB",
-      "gray-50": "#EFE6E6",
-      "gray-100": "#DFCCCC",
-      "gray-500": "#5E0000",
-      "primary-100": "#FFE1E0",
-      "primary-300": "#FFA6A3",
-      "primary-500": "#FF6B66",
-      "secondary-400": "#FFCD5B",
-      "secondary-500": "#FFC132",
+      "gray-20": "#F4F4F4", // Light gray for backgrounds
+      "gray-50": "#D9D9D9", // Medium light gray
+      "gray-100": "#B0B0B0", // Neutral gray for borders or text
+      "gray-300": "#7E7E7E", // Darker gray for emphasis
+      "gray-500": "#4A4A4A", // Charcoal gray for text
+      "primary-100": "#E0E7FF", // Light blue for accents
+      "primary-300": "#A6C8FF", // Soft blue for highlights
+      "primary-500": "#3B82F6", // Strong blue for primary actions
+      "secondary-400": "#A7D3FF", // Lighter blue for secondary accents
+      "secondary-500": "#1E90FF", // A more muted version for contrast
     },
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     backgroundImage: (theme) => ({

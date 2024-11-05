@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
-import ContactUsPageGraphic from "@/assets/Server.jpg";
+import ContactUsPageGraphic from "@/assets/ServerImage.avif";
 import HText from "@/shared/HText";
 
 type Props = {
@@ -125,7 +125,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               )}
 
               <button
-                className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white"
+                className="mt-5 rounded-lg bg-secondary-400 px-20 py-3 transition duration-500 hover:text-white"
                 type="submit"
               >
                 SUBMIT
