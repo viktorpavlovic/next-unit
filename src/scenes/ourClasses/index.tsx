@@ -1,5 +1,4 @@
-import { SelectedPage, ClassType } from "@/shared/types";
-import Class from "./Class";
+import { SelectedPage } from "@/shared/types";
 
 import { motion } from "framer-motion";
 import HText from "@/shared/HText";
