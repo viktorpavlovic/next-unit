@@ -1,6 +1,6 @@
 import Navbar from "@/scenes/navbar";
 import Home from "@/scenes/home";
-// import OurClasses from "@/scenes/ourClasses";
+import OurClasses from "@/scenes/ourClasses";
 import ContactUs from "./scenes/contactUs";
 import Footer from "./scenes/footer";
 import { useEffect, useState } from "react";
@@ -26,7 +26,7 @@ function App() {
   }, []);
 
   return (
-    <div className="app bg-gray-20">
+    <div className="app bg-custom-bg">
       <Navbar
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
@@ -34,7 +34,7 @@ function App() {
       />
       <Home setSelectedPage={setSelectedPage} />
       <OurProducts setSelectedPage={setSelectedPage} />
-      {/* <OurClasses setSelectedPage={setSelectedPage} /> */}
+      <OurClasses setSelectedPage={setSelectedPage} />
       <ContactUs setSelectedPage={setSelectedPage} />
       <Footer />
     </div>

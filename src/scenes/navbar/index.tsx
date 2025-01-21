@@ -3,7 +3,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/20/solid";
 import Link from "./Link";
 import { SelectedPage } from "@/shared/types";
 import ActionButton from "@/shared/ActionButton";
-import Logo from "@/assets/Logo.webp";
+import Logo from "@/assets/NextUnitLogo.svg";
 import useMediaQuery from "@/hooks/useMediaQueries";
 
 type Props = {
@@ -21,14 +21,14 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
   return (
     <nav>
       <div
-        className={`${navbarBackground} ${flexBetween} fixed top-0 z-30 w-full py-6`}
+        className={`${navbarBackground} ${flexBetween} fixed top-0 z-30 w-full py-6 `}
       >
         <div className={`${flexBetween} mx-auto w-5/6`}>
           <div className={`${flexBetween} w-full gap-16`}>
             <img
               src={Logo}
               alt="logo"
-              className="h-16 w-auto object-contain rounded-lg p-2 hover:opacity-90 transition-opacity duration-300"
+              className="h-24 w-auto object-contain rounded-lg p-2 hover:opacity-90 transition-opacity duration-300"
             />
 
             {isAboveMediumScreens ? (
@@ -44,11 +44,11 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
-                  {/* <Link
-                    page="Our Classes"
+                  <Link
+                    page="Why NextUnit"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
-                  /> */}
+                  />
                   <Link
                     page="Contact Us"
                     selectedPage={selectedPage}
@@ -92,11 +92,11 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
-            {/* <Link
-              page="Our Classes"
+            <Link
+              page="Why NextUnit"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
-            /> */}
+            />
             <Link
               page="Contact Us"
               selectedPage={selectedPage}

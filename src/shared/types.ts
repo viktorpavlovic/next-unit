@@ -1,13 +1,13 @@
 export enum SelectedPage {
   Home = "home",
   OurProducts = "ourproducts",
-  OurClasses = "ourclasses",
+  WhyNextUnit = "whynextunit",
   ContactUs = "contactus",
 }
 export interface ProductType {
   icon: JSX.Element;
-  title: string;
-  description: string;
+  title: string | JSX.Element | any;
+  description: string | JSX.Element | any;
 }
 export interface ClassType {
   name: string;

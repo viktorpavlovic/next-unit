@@ -46,9 +46,8 @@ const ContactUs = ({ setSelectedPage }: Props) => {
             <span className="text-primary-500">JOIN NOW</span> FOR OUR SERVICES
           </HText>
           <p className="my-5">
-            Congue adipiscing risus commodo placerat. Tellus et in feugiat nisl
-            sapien vel rhoncus. Placerat at in enim pellentesque. Nulla
-            adipiscing leo egestas nisi elit risus sit. Nunc cursus sagittis.
+            Discover how NextUnit can assist with your business technology
+            needs. Connect with an IT Consultant today!
           </p>
         </motion.div>
 
@@ -69,7 +68,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               target="_blank"
               onSubmit={onSubmit}
               method="POST"
-              action="https://formsubmit.co/0aaa7312a78d552b69c72c868af0c28f
+              action="https://formsubmit.co/viktorpavlovic117@gmail.com
               "
             >
               <input
