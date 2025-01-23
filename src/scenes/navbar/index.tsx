@@ -3,7 +3,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/20/solid";
 import Link from "./Link";
 import { SelectedPage } from "@/shared/types";
 import ActionButton from "@/shared/ActionButton";
-import Logo from "@/assets/NextUnitLogo.svg";
+import Logo from "@/assets/Logo.svg";
 import useMediaQuery from "@/hooks/useMediaQueries";
 
 type Props = {
