@@ -8,7 +8,7 @@ const Footer = () => {
           <img
             src={Logo}
             alt="logo"
-            className="h-16 w-auto object-contain rounded-lg  hover:opacity-90 transition-opacity duration-300"
+            className="h-28 w-auto object-contain rounded-lg  hover:opacity-90 transition-opacity duration-300"
           />
           <p className="my-5">
             NextUnit IT Consulting: Delivering innovative, secure, and scalable
