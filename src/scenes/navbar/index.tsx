@@ -28,7 +28,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             <img
               src={Logo}
               alt="logo"
-              className="h-24 w-auto object-contain rounded-lg p-2 hover:opacity-90 transition-opacity duration-300"
+              className="h-28 w-auto object-contain rounded-lg p-2 hover:opacity-90 transition-opacity duration-300"
             />
 
             {isAboveMediumScreens ? (
